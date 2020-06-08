@@ -1,0 +1,27 @@
+{
+  "projectName": "@ts-strict/eslint-config",
+  "projectOwner": "ts-strict",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "k3nsei",
+      "name": "Piotr Stępniewski",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/190422?v=4",
+      "profile": "https://github.com/k3nsei",
+      "contributions": [
+        "maintenance",
+        "review",
+        "code",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}

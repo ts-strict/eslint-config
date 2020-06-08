@@ -28,6 +28,8 @@ jobs:
         run: yarn run build
       - name: Test
         run: yarn run test
+      - name: Update contributors list
+        run: yarn all-contributors generate
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
