@@ -1,6 +1,6 @@
 {
   "name": "@ts-strict/eslint-config",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0",
   "private": false,
   "description": "This package provides sharable ESLint config with set of strict rules for TypeScript",
   "keywords": [
