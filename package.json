@@ -1,0 +1,57 @@
+{
+  "name": "@ts-strict/eslint-config",
+  "version": "0.0.0-semantically-released",
+  "private": false,
+  "description": "This package provides sharable ESLint config with set of strict rules for TypeScript",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "strict",
+    "strict-types",
+    "typescript",
+    "es2020"
+  ],
+  "repository": "git@github.com:ts-strict/eslint-config.git",
+  "license": "MIT",
+  "author": "Piotr Stępniewski <k3nsei.pl@gmail.com> (https://www.linkedin.com/in/piotrstepniewski/)",
+  "contributors": [
+    {
+      "name": "Piotr Stępniewski",
+      "email": "k3nsei.pl@gmail.com",
+      "url": "https://www.linkedin.com/in/piotrstepniewski/"
+    }
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "build": "yarn tsc --build ./tsconfig.json",
+    "format": "prettier --write **/*.{js,ts,json,md}",
+    "semantic-release": "semantic-release",
+    "test": "ts-node node_modules/tape/bin/tape \"tests.ts\""
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-import": "^2.21.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@types/node": "^14.0.11",
+    "@types/tape": "^4.13.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9",
+    "prettier": "^2.0.5",
+    "prettier-plugin-organize-imports": "^1.0.4",
+    "prettier-plugin-packagejson": "^2.2.5",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.0.8",
+    "tape": "^5.0.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}
