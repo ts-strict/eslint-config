@@ -27,10 +27,12 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         run: yarn run build
+      - name: Lint
+        run: yarn run lint
       - name: Test
         run: yarn run test
       - name: Update contributors list
-        run: yarn all-contributors generate
+        run: yarn run contributors-generate
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

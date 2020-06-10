@@ -26,7 +26,10 @@
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "yarn tsc --build ./tsconfig.json",
+    "contributors-add": "all-contributors add",
+    "contributors-generate": "all-contributors generate",
     "format": "prettier --write **/*.{js,ts,json,md}",
+    "lint": "eslint",
     "semantic-release": "semantic-release",
     "test": "ts-node node_modules/tape/bin/tape \"tests.ts\""
   },
